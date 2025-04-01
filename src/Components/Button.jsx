@@ -1,0 +1,7 @@
+import React from 'react'
+
+export const Button = ({ children, className }) => {
+    return (
+        <button className={'text-white font-semibold py-2 rounded w-full cursor-pointer transition-discrete' + className}> {children} </button>
+    )
+}
