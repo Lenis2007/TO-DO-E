@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Button = ({ children, className }) => {
+export const Button = ({ children, className, onClick = null }) => {
     return (
-        <button className={'text-white font-semibold py-2 rounded w-full cursor-pointer transition-discrete' + className}> {children} </button>
+        <button 
+        onClick={onClick}
+        className={'text-white font-semibold py-2 rounded w-full cursor-pointer transition-discrete' + className}> {children} </button>
     )
 }
